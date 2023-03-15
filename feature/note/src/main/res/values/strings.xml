@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_note">Add note</string>
+    <string name="notes_title">Your notes</string>
+    <string name="notes_sort">Sort</string>
+    <string name="sort_desc">Descending</string>
+    <string name="sort_asc">Ascending</string>
+    <string name="sort_title">Title</string>
+    <string name="sort_date">Date</string>
+    <string name="sort_color">Color</string>
+</resources>
