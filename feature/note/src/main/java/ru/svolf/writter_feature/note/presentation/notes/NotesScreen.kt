@@ -40,6 +40,7 @@ fun NotesScreen(
 	val scope = rememberCoroutineScope()
 
 	Scaffold(
+		snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
 		floatingActionButton = {
 			FloatingActionButton(
 				onClick = {

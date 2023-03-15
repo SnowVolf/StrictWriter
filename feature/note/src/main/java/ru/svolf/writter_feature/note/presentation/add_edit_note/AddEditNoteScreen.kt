@@ -1,6 +1,5 @@
 package ru.svolf.writter_feature.note.presentation.add_edit_note
 
-import android.annotation.SuppressLint
 import androidx.compose.animation.Animatable
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -14,6 +13,7 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.Save
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -69,6 +69,7 @@ fun AddEditNoteScreen(
 	}
 
 	Scaffold(
+		snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
 		floatingActionButton = {
 			FloatingActionButton(onClick = {
 				viewModel.onEvent(AddEditNoteEvent.SaveNote)
