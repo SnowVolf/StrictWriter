@@ -14,5 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "StrictWriter"
 include ':app'
-include ':feature:note'
 include ':core'
+include ':feature:note'
+include ':feature:settings'

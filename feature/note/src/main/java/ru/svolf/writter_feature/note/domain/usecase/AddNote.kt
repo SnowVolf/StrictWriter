@@ -11,12 +11,12 @@ import ru.svolf.writter_feature.note.domain.repository.NoteRepository
  */
 class AddNote(private val repository: NoteRepository) {
 
- @Throws(InvalidNoteException::class)
- suspend operator fun invoke(note: Note) {
-  if (note.title.isBlank() or note.content.isBlank()) {
-   throw  InvalidNoteException("Content or title is blank!")
-  }
-  repository.insertNote(note)
- }
+	@Throws(InvalidNoteException::class)
+	suspend operator fun invoke(note: Note) {
+		if (note.title.isBlank() or note.content.isBlank()) {
+			throw  InvalidNoteException("Content or title is blank!")
+		}
+		repository.insertNote(note)
+	}
 
 }
